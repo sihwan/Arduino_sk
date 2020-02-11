@@ -40,7 +40,7 @@ void loop(void)
     MCP4725.setVoltage(4094, false); // MCP4725_reading = (5.0/4096.0) * MCP4725_value;
     digitalWrite(5, LOW); // MCP 3
 
-    delay(1);
+//    delay(1);
 
     adcInput = analogRead(A0);
     Vin_0 = adcInput * (5.0 / 1023.0); // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
@@ -66,7 +66,7 @@ void loop(void)
     MCP4725.setVoltage(1024, false); // MCP4725_reading = (5.0/4096.0) * MCP4725_value;
     digitalWrite(5, LOW); // MCP 3
 
-    delay(1);
+//    delay(1);
 
     adcInput = analogRead(A0);
     Vin_0 = adcInput * (5.0 / 1023.0); // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
@@ -79,5 +79,5 @@ void loop(void)
 
     Serial.print(Vin_0);Serial.print(", ");Serial.print(Vin_1);Serial.print(", ");Serial.print(Vin_2);Serial.print(", ");Serial.print(Vin_3);Serial.println();
 
-    delay(500);
+//    delay(500);
 }
