@@ -60,5 +60,5 @@ void loop() {
   Serial.print(out10); Serial.print(", "); Serial.print(out11); Serial.print(", "); Serial.print(out12); Serial.print(", "); Serial.print(out13); Serial.println();
   Serial.print(out20); Serial.print(", "); Serial.print(out21); Serial.print(", "); Serial.print(out22); Serial.print(", "); Serial.print(out23); Serial.println();
   
-//  delay(500);                // unit: ms
+  delay(500);                // unit: ms
 }
