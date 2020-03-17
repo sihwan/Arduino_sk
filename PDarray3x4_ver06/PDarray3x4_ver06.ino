@@ -1,4 +1,5 @@
 int sensorValue;
+int timeinterver=100;   // ms
 float Vout;
 char userInput;
 
@@ -26,19 +27,19 @@ void loop() {
     if(userInput == 'g'){
       digitalWrite(2, HIGH); // Col0
       digitalWrite(6, HIGH); // Row0
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A0);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" ");
       digitalWrite(6, LOW); // Row0
       digitalWrite(7, HIGH); // Row1
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A1);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
       digitalWrite(7, LOW); // Row1
       digitalWrite(8, HIGH); // Row2
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A2);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
@@ -47,19 +48,19 @@ void loop() {
       
       digitalWrite(3, HIGH); // Col1
       digitalWrite(6, HIGH); // Row0
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A0);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" ");
       digitalWrite(6, LOW); // Row0
       digitalWrite(7, HIGH); // Row1
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A1);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
       digitalWrite(7, LOW); // Row1
       digitalWrite(8, HIGH); // Row2
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A2);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
@@ -68,19 +69,19 @@ void loop() {
     
       digitalWrite(4, HIGH); // Col2
       digitalWrite(6, HIGH); // Row0
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A0);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" ");
       digitalWrite(6, LOW); // Row0
       digitalWrite(7, HIGH); // Row1
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A1);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
       digitalWrite(7, LOW); // Row1
       digitalWrite(8, HIGH); // Row2
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A2);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
@@ -89,19 +90,19 @@ void loop() {
     
       digitalWrite(5, HIGH); // Col3
       digitalWrite(6, HIGH); // Row0
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A0);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" ");
       digitalWrite(6, LOW); // Row0
       digitalWrite(7, HIGH); // Row1
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A1);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
       digitalWrite(7, LOW); // Row1
       digitalWrite(8, HIGH); // Row2
-      delay(50);          // unit: ms
+      delay(timeinterver);          // unit: ms
       sensorValue = analogRead(A2);
       Vout = sensorValue * (5.0 / 1023.0);
       Serial.print(Vout); Serial.print(" "); 
